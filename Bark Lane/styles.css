@@ -1,0 +1,767 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Patrick Hand', cursive;
+  background-color: #305c81;
+}
+.dropdown {
+  display: none;
+}
+/*HEADER FOR HOME PAGE*/
+.header{
+  min-height: 22vh;
+  width: 100%;
+  background: #305c81;
+  background-position: top;
+  background-size: cover;
+  position: relative;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links{
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav-links ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+}
+.nav-links .fa-solid{
+  color: #22415b;
+  padding: 10px;
+}
+.nav-links ul li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #fff;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+  width: 110%;
+}
+.footer{
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+  background: #305c81;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+.footer p{
+  color: white;
+  font-size: 20px;
+}
+.footer #madeby{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.icons{
+  padding-bottom: 30px;
+}
+/*The fb & whatsapp*/
+.icons .fa-brands{
+  color: #22415b;
+  font-size: 50px;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 0;
+}
+/*The @ */
+.icons .fa-solid{
+  color: #22415b;
+  font-size: 50px;
+  margin: 0 50px;
+
+}
+/*The heart*/
+.fa-solid{
+  color: #22415b;
+}
+/*The linkedin icons*/
+.fa-brands{
+  color: #22415b;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+#madeby .fa-linkedin{
+  border: 1px solid;
+}
+.footer .icons .fa-brands:hover{
+  box-shadow: 0 0 20px white;
+}
+.footer .icons .fa-solid:hover{
+  box-shadow: 0 0 20px white;
+}
+/*header and logo*/
+
+#mobilelogo{
+    display: none;
+}
+#logo{
+    float: left;
+    
+}
+#logo:hover::after{
+    width: 0%;
+ }
+nav img{
+    padding: 5px;
+    width: 150px;
+    border-radius: 50%;
+
+}
+@media screen and (max-width: 700px) {
+    #centre-logo{
+        height: auto;
+    }
+}
+
+/* New menu */
+@media screen and (max-width: 700px){
+/* Dropdown Button */
+.dropbtn {
+  background-color: #3498DB;
+  color: #fff;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  float:right;
+  right:0;
+  text-align: left;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #fff;
+  padding: 10px 10px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown .fa-paw{
+        font-size: 20px;
+    }
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+}
+#myLinks{
+ display: none;
+}
+
+
+/* Home css stuff */
+    
+#home .fa-paw{
+    color: white;
+  }
+
+.testimonial-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+    width: 100%;
+    background: transparent !important;
+    background-position: top;
+    background-size: cover;
+    position: relative;
+    z-index: 999;
+    border-bottom: 3px solid white;
+}
+.heading{
+    background: transparent;
+}
+.heading .fa-solid{
+    color: darkgoldenrod;
+    font-size: 36px !important;
+    align-items: center !important;
+    background-color: transparent;
+}
+#openquotes{
+    color: white;
+}
+#closequotes{
+    color: white;
+}
+#author{
+    font-size: 26px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 20px white;
+}
+.testimonial{
+    background-color: transparent;
+    box-shadow: 0 0 20px white;
+}
+#scroll-container { 
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  background-color: transparent;
+      
+}
+.scroll{
+    background: transparent;
+}
+#scroll-text {
+  height: 460%;
+  text-align: center;
+  background-color: transparent;
+  color: white;
+  margin: 30px;
+  font-size: 18px;
+  background-color: transparent;
+  /* animation properties */
+  -moz-transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  transform: translateY(50%);
+
+  
+  -moz-animation: my-animation 50s linear infinite;
+  -webkit-animation: my-animation 50s linear infinite;
+  animation: my-animation 50s linear infinite;
+}
+
+#scroll-text .fa-solid{
+    background: transparent;
+    color: white;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateY(100%); }
+  to { -moz-transform: translateY(100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateY(100%); }
+  to { -webkit-transform: translateY(-100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    transform: translateY(10%);
+  }
+  to {
+    -moz-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+
+}
+/* Services section */
+#main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  background: linear-gradient(rgba(4,9,40,0.7),rgba(4,9,40,0.7)), url("images/dog.png") no-repeat center center/cover;
+  height: 70%;
+}
+#main h1{
+  color: white;
+}
+.row{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  background: transparent;
+}
+.box{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 450px;
+  margin: 10px;
+  align-items: center;
+  text-align: justify;
+  padding: 10px;
+  border-radius: 15px;
+  background: transparent;
+  background-size: 100% 200%;
+  transition: all .8s;
+}
+.box img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 20px white;
+}
+
+/*ABOUT*/
+#mainabout{
+      background: linear-gradient(rgba(4,9,40,0.7),rgba(4,9,40,0.7));
+}
+.info {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    padding: 20px;
+    background: transparent !important;
+  }
+.info p{
+    padding-top: 1vh;
+    color: white;
+    font-size: 24px;
+    max-width: 100%;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin: 0;
+    padding-left: 10%;
+    padding-right: 10%;
+    background: transparent !important;
+}
+article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent !important;
+}
+article img{
+    border-radius: 20px !important;
+    padding: 5px 0;
+}
+.photos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background: transparent;
+}
+.row{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding-bottom: 100px;
+  padding-top: 0px;
+}
+.row img{
+    background: transparent;
+}
+
+/*GALLERY*/
+#mainphotos{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background: linear-gradient(rgba(4,9,40,0.7),rgba(4,9,40,0.7));
+    width: 100%;
+}
+.hero{
+    padding-top: 40px;
+    height: 60vh;
+    width: 90%;
+    background: linear-gradient(rgba(4,9,40,0.7),rgba(4,9,40,0.7));
+    overflow: hidden;
+}
+
+.hero .carousel{
+    padding-top: 30px;
+    width: 300px;
+    margin: -50px auto 0;
+    overflow: visible;
+    background: transparent;
+}
+.carousel img{
+    -webkit-box-reflect: below 10px linear-gradient(rgba(4,9,40,0.7),rgba(4,9,40,0.7));
+}
+
+
+/*TERMS*/
+.terms-box ul{
+    padding-bottom: 20px;
+}
+.terms-box li{
+    text-align: left;
+    padding-left: 5%;
+    font-size: 22px;
+    background: linear-gradient(rgba(4,9,40,0.7),rgba(4,9,40,0.7));
+    color: white;
+}
+
+.terms-box p{
+    text-align: left;
+    background: #305c81;
+    color: #fff;
+    padding-left: 5%;
+    padding-bottom: 20px; 
+    background: linear-gradient(rgba(4,9,40,0.7),rgba(4,9,40,0.7));
+}
+.terms-box{
+
+    padding-bottom: 16vh;
+}
+.terms-box h1{
+    margin-top: 0;
+    padding-top: 1vh;
+    text-align: center;
+    font-size: 50px;
+    background: linear-gradient(rgba(4,9,40,0.7),rgba(4,9,40,0.7));
+    color: white;
+    
+}
+.text-box h1{
+    font-size: 62px;
+    color: #305c81;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: white;
+}
+form{
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    padding-top: 20px;
+    padding-bottom:10px;
+    margin: 10px 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+form:hover{
+   border: 3px solid white;
+  box-shadow: 0 0 20px white;
+}
+
+form input[type="text"]{
+    padding: 15px 5px;
+    box-sizing: border-box;
+    width: 80%;
+    border: 5px solid #22415b;
+    border-radius: 2%;
+    outline: none;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    transition: all 0.2s ease; 
+}
+form input[type="text"]:hover{
+    border-color: #3f6d91;
+    
+}
+
+
+::placeholder {
+    color: #3f6d91;
+  }
+  .label{
+      font-size: 26px;
+  }
+  .btn{
+    background: #3f6d91;
+    width: 200px;
+    padding: 10px 0;
+    border-radius: 2%;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 20px;
+}
+.btn:hover{
+    background-color: #22415b;
+}
+
+/*CONTACT*/
+.wrapper{
+    padding-right: 40px;
+    padding-left: 40px;
+    box-sizing: border-box;
+    background: linear-gradient(rgba(4,9,40,0.7),rgba(4,9,40,0.7));
+    color: white;
+}
+.wrappercontent{
+    text-align: center;
+    padding-bottom: 130px;
+    background: transparent !important;
+}
+.wrappercontent h1{
+    padding-top: 1vh;
+    font-size: 50px;
+    text-align: center;
+    background: transparent !important;
+}
+.wrappercontent p{
+    font-size: 20px;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    background: transparent !important;
+}
+.form{
+    width: 100%;
+    background: transparent !important;
+}
+
+::placeholder{
+    color: grey;
+}
+
+.top-form,
+.mid-form,
+.bottom-form{
+    width: 100%;
+    min-height: 65px; 
+    margin: 10px 0;
+    color: white;
+    overflow: hidden;
+    font-size: 20px;    
+}
+.form input[type="text"],
+.form textarea{
+    padding: 15px 5px;
+    box-sizing: border-box;
+    width: 90%;
+    border: 5px solid #22415b;
+    border-radius: 2%;
+    outline: none;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    transition: all 0.2s ease; 
+}
+::placeholder {
+  color: #3f6d91;
+}
+.form input[type="text"]:hover{
+    border-color: #3f6d91;
+    
+}
+.form textarea:hover{
+    border-color: #3f6d91;
+}
+.form input:focus,
+.form textarea:focus{
+    border-color: #3f6d91;
+}
+.bottom-form textarea{
+    height: 120px;
+    max-height: 120px;
+}
+.btn{
+    background: #3f6d91;
+    width: 200px;
+    padding: 10px 0;
+    border-radius: 2%;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 20px;
+}
+@media screen and (max-width: 700px){
+    #home,
+    #about,
+    #gallery,
+    #tc,
+    #contact,
+    #homeabout,
+    #aboutabout,
+    #galleryabout,
+    #tcabout,
+    #contactabout {
+        display: none;
+    }
+    #homecontact,
+    #aboutcontact,
+    #gallerycontact,
+    #tccontact,
+    #contactcontact {
+        display: none;
+    }
+    #homegallery,
+    #aboutgallery,
+    #gallerygallery,
+    #tcgallery,
+    #contactgallery {
+        display: none;
+    }
+    #hometc,
+    #abouttc,
+    #gallerytc,
+    #tctc,
+    #contacttc {
+        display: none;
+    }
+    #homecontthanks,
+    #aboutcontthanks,
+    #gallerycontthanks,
+    #tccontthanks,
+    #contactcontthanks {
+        display: none;
+    }
+    #hometcthanks
+    #abouttcthanks
+    #gallerytcthanks
+    #tctcthanks
+    #contacttcthanks {
+        display: none;
+    }
+    .header{
+  min-height: 1vh;
+}
+    .footer{
+        position: fixed;
+        
+    }
+    .carousel{
+        padding-top: 10%;
+    }
+    .heading .fa-solid{
+    color: darkgoldenrod;
+    font-size: 20px !important;
+    align-items: center !important;
+    background-color: transparent;
+}
+    .footer{
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    bottom: 0;
+}
+    #main{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: linear-gradient(rgba(4,9,40,0.7),rgba(4,9,40,0.7)), url("images/dog.png") no-repeat center center/cover;
+  height: 100%;
+}
+    #logo{
+        
+    }
+    .row{
+        padding: 0px;
+        margin: 0px;
+    }
+    .box{
+        height: 270px;
+        padding: 0px! important;
+        margin: 0px;
+    }
+    #main{
+        height: auto;
+    }
+    #author{
+    font-size: 18px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 20px white;
+    }
+    #scroll-text {
+  height: 460%;
+  text-align: center;
+  background-color: transparent;
+  color: white;
+  margin: 30px;
+  font-size: 14px;
+}
+    #centre-logo{
+        height: 250px;
+        width: 250px;
+        padding-top: 0px;
+        box-shadow: 0 0 7px white;
+    }
+.testimonial-header{
+    min-height: 7vh;
+    width: 100%;
+    z-index: 999;
+    border-bottom: 2px solid white;
+}
+    #madeby{
+        font-size: 12px
+    }
+    .wrapper{
+    padding-right: 1%;
+    padding-left: 1%;
+    box-sizing: border-box;
+    background: linear-gradient(rgba(4,9,40,0.7),rgba(4,9,40,0.7));
+    color: white;
+    }
+    #mainphotos{
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(rgba(4,9,40,0.7),rgba(4,9,40,0.7));
+    width: 100%;
+}
+.hero{
+    height: 60vh;
+    width: 90%;
+}
+
+.hero .carousel{
+    padding-top: 30px;
+    width: 200px;
+    margin: -50px auto 0;
+}
+.photos{
+    padding-bottom: 40px;
+}
+.row{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding-bottom: 100px;
+  padding-top: 0px;
+}
+    .row img{
+      width: 270px;
+      padding-top: 20px;
+      background: transparent;
+    }
+article img{
+    border-radius: 0px !important;
+}
+
+}
